@@ -1,0 +1,111 @@
+body {
+    background-color: #1a1a2e;
+    color: #e5e5e5;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.checkers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.checker-tile {
+    background-color: #162447;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #00aaff;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #005f8a;
+}
+
+.upload-section {
+    margin-top: 30px;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 10px auto;
+    background-color: #fff;
+    color: #1a1a2e;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#startCheckerBtn {
+    margin-top: 30px;
+    background-color: #00cc44;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#startCheckerBtn:hover {
+    background-color: #009933;
+}
+
+#progressBarContainer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#progressBar {
+    width: 100%;
+    background-color: #1f4068;
+    border-radius: 10px;
+    height: 30px;
+    overflow: hidden;
+}
+
+#progress {
+    height: 100%;
+    width: 0;
+    background-color: #00aaff;
+    transition: width 0.4s;
+}
+
+#resultsSection {
+    margin-top: 40px;
+}
+
+#results {
+    background-color: #162447;
+    padding: 20px;
+    border-radius: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.result {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #1f4068;
+    border-radius: 5px;
+}
+
+.valid {
+    color: #00ff00;
+}
+
+.invalid {
+    color: #ff0000;
+}
+
+.locked {
+    color: #ffa500;
+}

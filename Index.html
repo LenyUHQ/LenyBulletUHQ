@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LenyBullet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenue sur LenyBullet</h1>
+        <div class="config-selector">
+            <h2>Sélectionnez un checker</h2>
+            <div class="checkers-grid">
+                <div class="checker-tile" id="adnChecker">
+                    <h3>Checker ADN</h3>
+                    <button onclick="selectChecker('adn')">Entrée</button>
+                </div>
+                <div class="checker-tile" id="netflixChecker">
+                    <h3>Checker Netflix</h3>
+                    <button onclick="selectChecker('netflix')">Entrée</button>
+                </div>
+                <div class="checker-tile" id="spotifyChecker">
+                    <h3>Checker Spotify</h3>
+                    <button onclick="selectChecker('spotify')">Entrée</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="upload-section">
+            <h2>Charger une combolist</h2>
+            <input type="file" id="combolistInput">
+        </div>
+
+        <div class="upload-section">
+            <h2>Charger un fichier de proxies</h2>
+            <input type="file" id="proxyInput">
+        </div>
+
+        <button id="startCheckerBtn">Lancer le Checker</button>
+
+        <div id="progressBarContainer">
+            <h2>Progression du checker :</h2>
+            <div id="progressBar">
+                <div id="progress"></div>
+            </div>
+        </div>
+
+        <div id="resultsSection">
+            <h2>Résultats :</h2>
+            <div id="results"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
